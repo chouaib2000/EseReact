@@ -12,7 +12,7 @@ export function Counter({ initialValue = 0, increment = 1, decrement = 1 }) {
         setCounter((c) => c - decrement)
     }
     function resetCounter() {
-        setCounter((c) => c = initialValue)
+        setCounter(initialValue)
     }
     return (
         <div>
